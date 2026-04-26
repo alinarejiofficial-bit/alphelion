@@ -979,55 +979,46 @@ body {
     padding: 24px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
     z-index: 10;
-    width: 220px;
+    width: 210px;
     text-align: center;
 }
 
 .floating-badge h5 {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
     color: var(--text-main);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     line-height: 1.4;
 }
 
+.badge-gauge-cover {
+    margin-right: 100px;
+}
+
 .badge-gauge {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     margin: 0 auto;
-    position: relative;
+    border: 4px solid #EFF6FF;
+    border-top-color: var(--hover-blue);
     border-radius: 50%;
-    background: conic-gradient(var(--brand-blue) 0% 92%, #F3F4F6 92% 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.badge-gauge::after {
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background: #FFFFFF;
-    border-radius: 50%;
-}
-
-.badge-value {
-    position: relative;
-    z-index: 2;
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 14px;
+    font-weight: 700;
     color: var(--text-main);
 }
 
+.badge-value {
+    line-height: 1;
+}
+
 .badge-label {
-    position: relative;
-    z-index: 2;
-    font-size: 11px;
+    font-size: 8px;
+    color: var(--text-sub);
     font-weight: 700;
-    color: #6B7280;
-    text-transform: uppercase;
     margin-top: -2px;
 }
 
@@ -1122,7 +1113,7 @@ body {
 
 .cta-content {
     flex: 1.2;
-    padding: 40px 80px;
+    padding: 40 80px;
     position: relative;
     z-index: 2;
 }
